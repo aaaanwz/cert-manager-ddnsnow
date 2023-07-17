@@ -45,7 +45,7 @@ func (c *customDNSProviderSolver) Present(ch *v1alpha1.ChallengeRequest) error {
 	fmt.Printf("Decoded configuration %v", cfg)
 
 	// Updating the DNS TXT record
-	resp, err := http.Get(fmt.Sprintf("https://f5.si/update.php?domain=%s&password=%s&txt=%s", cfg.Username, cfg.Password, ch.ResolvedFQDN))
+	resp, err := http.Get(fmt.Sprintf("https://f5.si/update.php?domain=%s&password=%s&txt=%s", cfg.Username, cfg.Password, ch.Key))
 
 	if err != nil || resp.StatusCode != http.StatusOK {
 		return fmt.Errorf("Failed to present DNS record: %v", err)
