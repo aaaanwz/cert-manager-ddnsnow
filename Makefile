@@ -33,6 +33,11 @@ clean-kubebuilder:
 build:
 	docker build -t "$(IMAGE_NAME):$(IMAGE_TAG)" .
 
+helm:
+	cd helm
+	helm package .
+	helm repo index .
+
 .PHONY: rendered-manifest.yaml
 rendered-manifest.yaml:
 	helm template \

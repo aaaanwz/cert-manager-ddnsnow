@@ -3,11 +3,11 @@ entries:
   cert-manager-ddnsnow:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-07-14T12:48:29.137570752+09:00"
+    created: "2023-07-18T01:27:58.014141432+09:00"
     description: A Helm chart for Kubernetes
-    digest: 3ec5c7e158e295de3f8d81e356368feadf8d799829ef45eec4d1d756bba4de30
+    digest: 037666ab8d70e456d2585fa7a7e9a0cc473d0a64d914c808ad48b0b283e17931
     name: cert-manager-ddnsnow
     urls:
     - cert-manager-ddnsnow-0.1.0.tgz
     version: 0.1.0
-generated: "2023-07-14T12:48:29.137258855+09:00"
+generated: "2023-07-18T01:27:58.013637851+09:00"

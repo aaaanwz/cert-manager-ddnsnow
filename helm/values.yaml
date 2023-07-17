@@ -13,7 +13,7 @@ certManager:
   serviceAccountName: cert-manager
 
 image:
-  repository: ghcr.io/aaaanwz/cert-manager-ddnsnow:latest
+  repository: aaaanwz/cert-manager-ddnsnow:latest
   tag: latest
   pullPolicy: IfNotPresent
 
